@@ -49,15 +49,15 @@ excel_file = xlrd.open_workbook("Ordinamento_merge_Resnet_output_neuron_MNIST_co
 sheet0 = excel_file.sheet_by_name("Sheet1")
 critic = []
 
-for row in range(12000): #1%
-    critic.append(int(sheet0.cell_value(rowx = row, colx = 0)))
-print(critic)
-excel_file.release_resources()
+#for row in range(12000): #1%
+ #   critic.append(int(sheet0.cell_value(rowx = row, colx = 0)))
+#print(critic)
+#excel_file.release_resources()
 
-#for cont in range(200):
- #   x = random.randint(1,39425)
-  #  critic.append(x)
-#critic.sort()
+for cont in range(12000):
+    x = random.randint(1,39425)
+    critic.append(x)
+critic.sort()
 
 #print(critic)
 
